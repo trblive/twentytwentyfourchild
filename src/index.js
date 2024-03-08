@@ -51,13 +51,16 @@ document.head.appendChild(styleSheet);
 
 // add box shadow controls to block editor tools
 const boxShadowControls = wp.compose.compose(
+
     wp.blockEditor.withColors({shadowColor: 'box-shadow'}),
 
-    wp.compose.createHigherOrderComponent(BlockEdit => {
+    wp.compose.createHigherOrderComponent((BlockEdit) => {
 
-        return props => {
+        return (props) => {
             if (props.name !== "core/button") {
-                return(<BlockEdit {...props} />);
+                return(
+                    <BlockEdit {...props} />
+                );
             }
             const { attributes, setAttributes, isSelected, shadowColor, setShadowColor } = props;
             const { xValue, yValue, blur, spread } = attributes;
@@ -99,12 +102,9 @@ const boxShadowControls = wp.compose.compose(
                     // check if pattern already exists for selected identifier
                     if (regex.test(styleSheet.innerHTML) === true) {
 
-                        // false?????? huh?????
-                        console.log(regex.test(styleSheet.innerHTML));
                         console.log(styleSheet.innerHTML.match(regex));
 
                         // replace with updated styles
-                        // will not update???
                         styleSheet.innerHTML = styleSheet.innerHTML.replace(regex, `.${newClassName} > * { ${styles}; }`);
 
                     } else {
@@ -133,41 +133,49 @@ const boxShadowControls = wp.compose.compose(
                             />
                             <PanelBody>
                                 <PanelRow>
-                                    <TextControl>
+                                    <TextControl
                                         label = {__('X')}
                                         value = {xValue}
-                                        onChange = { nextXValue => {
-                                            setAttributes({ xValue: nextXValue})
+                                        onChange = { (nextXValue) => {
+                                            setAttributes({
+                                                xValue: nextXValue,
+                                            })
                                         }}
-                                    </TextControl>
-                                    <TextControl>
+                                    />
+                                    <TextControl
                                         label = {__('Y')}
                                         value = {yValue}
-                                        onChange = { nextYValue => {
-                                        setAttributes({ yValue: nextYValue})
+                                        onChange = { (nextYValue) => {
+                                            setAttributes({
+                                                yValue: nextYValue,
+                                            })
                                     }}
-                                    </TextControl>
-                                    <TextControl>
+                                    />
+                                    <TextControl
                                         label = {__('blur')}
                                         value = {blur}
-                                        onChange = { nextBlur => {
-                                        setAttributes({ blur: nextBlur})
+                                        onChange = { (nextBlur) => {
+                                            setAttributes({
+                                                blur: nextBlur,
+                                            })
                                     }}
-                                    </TextControl>
-                                    <TextControl>
+                                    />
+                                    <TextControl
                                         label = {__('spread')}
                                         value = {spread}
-                                        onChange = { nextSpread => {
-                                        setAttributes({ spread: nextSpread})
+                                        onChange = { (nextSpread) => {
+                                            setAttributes({
+                                                spread: nextSpread,
+                                            })
                                     }}
-                                    </TextControl>
+                                    />
                                 </PanelRow>
                             </PanelBody>
                         </InspectorControls>
                     }
                 </Fragment>
             );
-        }
+        };
 }, 'boxShadowControls'));
 
 wp.hooks.addFilter(
