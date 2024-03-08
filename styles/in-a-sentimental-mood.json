@@ -1,0 +1,162 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "In A Sentimental Mood",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#E9E9E3",
+						"#352E25"
+					],
+					"slug": "duotone-1",
+					"name": "Dark brown and off-white"
+				},
+				{
+					"colors": [
+						"#AB9D85",
+						"#E9E9E3"
+					],
+					"slug": "duotone-1",
+					"name": "Khaki and off-white"
+				},
+				{
+					"colors": [
+						"#B5B8AD",
+						"#E9E9E3"
+					],
+					"slug": "duotone-1",
+					"name": "Ash grey and off-white"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom, #352E25 0%, #E9E9E3 100%)",
+					"slug": "gradient-1",
+					"name": "Dark brown to off-white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #AB9D85 0%, #E9E9E3 100%)",
+					"slug": "gradient-2",
+					"name": "Khaki to off-white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #B5B8AD 0%, #E9E9E3 100%)",
+					"slug": "gradient-3",
+					"name": "Ash grey to off-white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #352E25 50%, #E9E9E3 50%)",
+					"slug": "gradient-4",
+					"name": "Hard dark brown to off-white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #AB9D85 50%, #E9E9E3 50%)",
+					"slug": "gradient-5",
+					"name": "Hard khaki to off-white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #B5B8AD 50%, #E9E9E3 50%)",
+					"slug": "gradient-6",
+					"name": "Hard ash grey to off-white"
+				}
+			],
+			"palette": [
+				{
+					"color": "#E9E9E3",
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"color": "#DFD9D1",
+					"slug": "base-2",
+					"name": "Base / Two"
+				},
+				{
+					"color": "#352E25",
+					"slug": "contrast",
+					"name": "Contrast"
+				},
+				{
+					"color": "#AB9D85",
+					"slug": "accent",
+					"name": "Accent"
+				},
+				{
+					"color": "#C8B9A8",
+					"slug": "accent-2",
+					"name": "Accent / Two"
+				},
+				{
+					"color": "#E0CFC5",
+					"slug": "accent-3",
+					"name": "Accent / Three"
+				},
+				{
+					"color": "#B5B8AD",
+					"slug": "accent-4",
+					"name": "Accent / Four"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Poppins/Poppins-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Poppins/Poppins-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Poppins",
+							"fontStyle": "bold",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Poppins/Poppins-Bold.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Poppins\", sans-serif",
+					"name": "Poppins",
+					"slug": "body"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Playfair Display",
+							"fontStyle": "normal",
+							"fontWeight": "400 700",
+							"src": [
+								"file:./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf"
+							]
+						},
+						{
+							"fontFamily": "Playfair Display",
+							"fontStyle": "italic",
+							"fontWeight": "400 700",
+							"src": [
+								"file:./assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Playfair Display\", serif",
+					"name": "Playfair Display",
+					"slug": "heading"
+				}
+			]
+		}
+	}
+}

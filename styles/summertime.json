@@ -1,0 +1,169 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Summertime",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#F5F5F5",
+						"#79AF79"
+					],
+					"slug": "duotone-1",
+					"name": "White and green"
+				},
+				{
+					"colors": [
+						"#F5F5F5",
+						"#F49BAF"
+					],
+					"slug": "duotone-2",
+					"name": "White and pink"
+				},
+				{
+					"colors": [
+						"#F4E9EA",
+						"#F49BAF"
+					],
+					"slug": "duotone-3",
+					"name": "Blush and pink"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom, #79AF79 0%, #F5F5F5 100%)",
+					"slug": "gradient-1",
+					"name": "Green to white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #F49BAF 0%, #F49BAF 100%)",
+					"slug": "gradient-2",
+					"name": "Pink to white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #F4E9EA 0%, #F49BAF 100%)",
+					"slug": "gradient-3",
+					"name": "Blush to pink"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #F3DEE2 0%, #F1A29F 100%)",
+					"slug": "gradient-4",
+					"name": "Rose to melon"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #79AF79 50%, #F5F5F5 50%)",
+					"slug": "gradient-5",
+					"name": "Hard green to white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #F49BAF 50%, #F5F5F5 50%)",
+					"slug": "gradient-6",
+					"name": "Hard pink to white"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #F4E9EA 50%, #F49BAF 50%)",
+					"slug": "gradient-7",
+					"name": "Hard blush to pink"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #F3DEE2 50%, #F1A29F 50%)",
+					"slug": "gradient-8",
+					"name": "Hard rose to melon"
+				}
+			],
+			"palette": [
+				{
+					"color": "#F5F5F5",
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"color": "#F4E9EA",
+					"slug": "base-2",
+					"name": "Base / Two"
+				},
+				{
+					"color": "#080801",
+					"slug": "contrast",
+					"name": "Contrast"
+				},
+				{
+					"color": "#F49BAF",
+					"slug": "contrast-2",
+					"name": "Contrast / Two"
+				},
+				{
+					"color": "#F3DEE2",
+					"slug": "accent",
+					"name": "Accent"
+				},
+				{
+					"color": "#79AF79",
+					"slug": "accent-2",
+					"name": "Accent / Two"
+				},
+				{
+					"color": "#F0CF33",
+					"slug": "accent-3",
+					"name": "Accent / Three"
+				},
+				{
+					"color": "#F1A29F",
+					"slug": "accent-4",
+					"name": "Accent / Four"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Fira Sans",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Fira_Sans/FiraSans-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Fira Sans",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Fira_Sans/FiraSans-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Fira Sans",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Fira_Sans/FiraSans-Bold.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Fira Sans\", sans-serif",
+					"name": "Fira Sans",
+					"slug": "body"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Sunshiney",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Sunshiney/Sunshiney-Regular.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Sunshiney\", fantasy",
+					"name": "Sunshiney",
+					"slug": "heading"
+				}
+			]
+		}
+	}
+}

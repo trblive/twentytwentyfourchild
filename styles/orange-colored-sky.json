@@ -1,0 +1,167 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Orange Colored Sky",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#FFFFFF",
+						"#FC6C9D"
+					],
+					"slug": "duotone-1",
+					"name": "White and power pink"
+				},
+				{
+					"colors": [
+						"#FFFFFF",
+						"#FE770F"
+					],
+					"slug": "duotone-2",
+					"name": "White and orange"
+				},
+				{
+					"colors": [
+						"#FFFFFF",
+						"#FF91AF"
+					],
+					"slug": "duotone-3",
+					"name": "White and baker miller pink"
+				},
+				{
+					"colors": [
+						"#FE770F",
+						"#FC6C9D"
+					],
+					"slug": "duotone-4",
+					"name": "Orange and power pink"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom, #FFD1DC 0%, #FC6C9D 100%)",
+					"slug": "gradient-1",
+					"name": "Light pink to power pink"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #FFBDAD 0%, #FE770F 100%)",
+					"slug": "gradient-2",
+					"name": "Melon to orange"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #FFE8E2 0%, #FF91AF 100%)",
+					"slug": "gradient-3",
+					"name": "Rose to baker miller pink"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #FFD1DC 50%, #FC6C9D 50%)",
+					"slug": "gradient-4",
+					"name": "Hard light pink to power pink"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #FFBDAD 50%, #FE770F 50%)",
+					"slug": "gradient-4",
+					"name": "Hard melon to orange"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #FFE8E2 50%, #FF91AF 50%)",
+					"slug": "gradient-4",
+					"name": "Hard rose to baker miller pink"
+				}
+			],
+			"palette": [
+				{
+					"color": "#FFFFFF",
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"color": "#FFE8E2",
+					"slug": "base-2",
+					"name": "Base / Two"
+				},
+				{
+					"color": "#000000",
+					"slug": "contrast",
+					"name": "Contrast"
+				},
+				{
+					"color": "#FC6C9D",
+					"slug": "contrast-2",
+					"name": "Contrast / Two"
+				},
+				{
+					"color": "#FE770F",
+					"slug": "contrast-3",
+					"name": "Contrast / Three"
+				},
+				{
+					"color": "#FF91AF",
+					"slug": "accent",
+					"name": "Accent"
+				},
+				{
+					"color": "#FFBDAD",
+					"slug": "accent-2",
+					"name": "Accent / Two"
+				},
+				{
+					"color": "#FFD1DC",
+					"slug": "accent-3",
+					"name": "Accent / Three"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "bold",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Bold.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Lato\", sans-serif",
+					"name": "Lato",
+					"slug": "body"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Nectarine",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/nectarine/Nectarine DEMO.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Nectarine\", fantasy",
+					"name": "Nectarine",
+					"slug": "heading"
+				}
+			]
+		}
+	}
+}

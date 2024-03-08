@@ -1,0 +1,190 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Chameleon",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#EFE8D0",
+						"#1F1F1F"
+					],
+					"slug": "duotone-1",
+					"name": "Beige and black"
+				},
+				{
+					"colors": [
+						"#EFE8D0",
+						"#DA5870"
+					],
+					"slug": "duotone-2",
+					"name": "Beige and dark pink"
+				},
+				{
+					"colors": [
+						"#EFE8D0",
+						"#00AACC"
+					],
+					"slug": "duotone-3",
+					"name": "Beige and cyan"
+				},
+				{
+					"colors": [
+						"#FDC8DB",
+						"#DA5870"
+					],
+					"slug": "duotone-4",
+					"name": "Pink duotone"
+				},
+				{
+					"colors": [
+						"#FFC75A",
+						"#70B74A"
+					],
+					"slug": "duotone-5",
+					"name": "Yellow and lime"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom, #DA5870 0%, #EFE8D0 100%)",
+					"slug": "gradient-1",
+					"name": "Dark pink to beige"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #00AACC 0%, #EFE8D0 100%)",
+					"slug": "gradient-2",
+					"name": "Cyan to beige"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #70B74A 0%, #EFE8D0 100%)",
+					"slug": "gradient-3",
+					"name": "Lime to beige"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #DA5870 50%, #EFE8D0 50%)",
+					"slug": "gradient-4",
+					"name": "Hard dark pink to beige"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #00AACC 50%, #EFE8D0 50%)",
+					"slug": "gradient-5",
+					"name": "Hard cyan to beige"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #70B74A 50%, #EFE8D0 50%)",
+					"slug": "gradient-6",
+					"name": "Hard lime to beige"
+				}
+			],
+			"palette": [
+				{
+					"color": "#EFE8D0",
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"color": "#1F1F1F",
+					"slug": "contrast",
+					"name": "Contrast"
+				},
+				{
+					"color": "#DA5870",
+					"slug": "contrast-2",
+					"name": "Contrast / Two"
+				},
+				{
+					"color": "#00AACC",
+					"slug": "contrast-3",
+					"name": "Contrast / Three"
+				},
+				{
+					"color": "#FDC8DB",
+					"slug": "accent",
+					"name": "Accent"
+				},
+				{
+					"color": "#FFC75A",
+					"slug": "accent-2",
+					"name": "Accent / Two"
+				},
+				{
+					"color": "#70B74A",
+					"slug": "accent-3",
+					"name": "Accent / Three"
+				},
+				{
+					"color": "#FFFFFF",
+					"slug": "accent-4",
+					"name": "Accent / Four"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Ubuntu Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Ubuntu Mono",
+							"fontStyle": "bold",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Ubuntu Mono\", monospace",
+					"name": "Ubuntu Mono",
+					"slug": "body"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Aguafina Script",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Aguafina_Script/AguafinaScript-Regular.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Aguafina Script\", cursive",
+					"name": "Aguafina Script",
+					"slug": "subheading"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Aclonica",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Aclonica/Aclonica-Regular.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Aclonica\", fantasy",
+					"name": "Aclonica",
+					"slug": "heading"
+				}
+			]
+		}
+	}
+}
