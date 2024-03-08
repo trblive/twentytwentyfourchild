@@ -1,0 +1,144 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+	"title": "Take Five",
+	"settings": {
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#F4F5F5",
+						"#DACFF4"
+					],
+					"slug": "duotone-1",
+					"name": "White and periwinkle"
+				},
+				{
+					"colors": [
+						"#F4F5F5",
+						"#F4A5A5"
+					],
+					"slug": "duotone-2",
+					"name": "White and melon"
+				},
+				{
+					"colors": [
+						"#FFDBE5",
+						"#F4A5A5"
+					],
+					"slug": "duotone-3",
+					"name": "Pastel pink and melon"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom, #FFDBE5 0%, #F4A5A5 100%)",
+					"slug": "gradient-1",
+					"name": "Pastel pink to melon"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #DACFF4 0%, #FFF5B2 100%)",
+					"slug": "gradient-2",
+					"name": "Periwinkle to vanilla"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #FFDBE5 50%, #F4A5A5 50%)",
+					"slug": "gradient-3",
+					"name": "Hard pastel pink to melon"
+				},
+				{
+					"gradient": "linear-gradient(to bottom, #DACFF4 50%, #FFF5B2 50%)",
+					"slug": "gradient-4",
+					"name": "Hard periwinkle to vanilla"
+				}
+			],
+			"palette": [
+				{
+					"color": "#F4F5F5",
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"color": "#080801",
+					"slug": "contrast",
+					"name": "Contrast"
+				},
+				{
+					"color": "#F4A5A5",
+					"slug": "contrast-2",
+					"name": "Contrast / Two"
+				},
+				{
+					"color": "#D5F4E8",
+					"slug": "accent",
+					"name": "Accent"
+				},
+				{
+					"color": "#DACFF4",
+					"slug": "accent-2",
+					"name": "Accent / Two"
+				},
+				{
+					"color": "#FFDBE5",
+					"slug": "accent-3",
+					"name": "Accent / Three"
+				},
+				{
+					"color": "#FFF5B2",
+					"slug": "accent-4",
+					"name": "Accent / Four"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStyle": "bold",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Bold.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Lato\", sans-serif",
+					"name": "Lato",
+					"slug": "body"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Agbalumo",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Agbalumo/Agbalumo-Regular.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Agbalumo\", cursive",
+					"name": "Agbalumo",
+					"slug": "heading"
+				}
+			]
+		}
+	}
+}
