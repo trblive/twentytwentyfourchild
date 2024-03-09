@@ -6,6 +6,49 @@ const { InspectorControls, PanelColorSettings } = wp.blockEditor;
 const { Fragment } = wp.element;
 const { __ } = wp.i18n;
 
+
+const loadStaticCssOnHead = (staticCss) => {
+    if (staticCss.id && staticCss.href) {
+        let styleSelector = window.document;
+        let iframes = document.getElementsByName('editor-canvas');
+        if (iframes.length) {
+            styleSelector = iframes[0].contentDocument;
+        }
+        if (styleSelector.getElementById(staticCss.id) === null) {
+            let link = document.createElement('link');
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            link.id = staticCss.id;
+            if (styleSelector.getElementsByTagName('head').length !== 0) {
+                styleSelector.getElementsByTagName('head')[0].appendChild(link);
+                link.href = staticCss.href;
+            } else {
+                styleSelector.getElementsByTagName('body')[0].appendChild(link);
+                link.href = staticCss.href;
+            }
+        } else {
+            styleSelector.getElementById(staticCss.id).href = staticCss.href;
+        }
+    }
+};
+
+function EditorReady($, iframes) {
+    let wpdocument = $(document);
+
+    if (typeof iframes !== "undefined" && iframes.length) {
+        wpdocument = $('iframe[name="editor-canvas"]').contents();
+    }
+
+    wpdocument.on(
+        "change",
+        ".block-editor-panel-color-gradient-settings__dropdown, .components-text-control__input",
+        function () {
+            console.log(this);
+        }
+    )
+}
+
+
 function addBoxShadow(settings, name) {
     if (typeof settings.attributes !== "undefined") {
         if (name !== "core/button") {
@@ -209,3 +252,28 @@ wp.hooks.addFilter(
     "block-apply-shadow-class",
     applyBoxShadow
 );
+
+(function ($) {
+    function preEditor() {
+        if (window.location.href.indexOf('site-editor.php') > -1) {
+            let blockLoaded = false;
+            let blockLoadedInterval = setInterval(function () {
+                let iframes = $('iframe[name="editor-canvas"]');
+                if (iframes.length) {
+                    /*post-title-0 is ID of Post Title Textarea*/
+                    //Actual functions goes here
+                    EditorReady($, iframes);
+
+                    blockLoaded = true;
+                }
+                if (blockLoaded) {
+                    clearInterval(blockLoadedInterval);
+                }
+            }, 500);
+        } else {
+            EditorReady($);
+        }
+    }
+
+    preEditor();
+})(jQuery);
