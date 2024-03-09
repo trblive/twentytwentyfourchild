@@ -8,8 +8,13 @@
 ?>
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|50","margin":{"top":"0","bottom":"0"}},"border":{"bottom":{"color":"var:preset|color|contrast","width":"2px"},"top":[],"right":[],"left":[]}},"backgroundColor":"accent","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<<<<<<< HEAD
 <div class="wp-block-group alignfull has-accent-background-color has-background" style="border-bottom-color:var(--wp--preset--color--contrast);border-bottom-width:2px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"id":28,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px","width":"2px"}},"borderColor":"contrast"} -->
     <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress3/wp-content/uploads/2024/03/banner-1024x731.png" alt="" class="has-border-color has-contrast-border-color wp-image-28" style="border-width:2px;border-radius:16px"/></figure>
+=======
+<div class="wp-block-group alignfull has-accent-background-color has-background" style="border-bottom-color:var(--wp--preset--color--contrast);border-bottom-width:2px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"id":28,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}}} -->
+    <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress3/wp-content/uploads/2024/03/banner-1024x731.png" alt="" class="wp-image-28" style="border-radius:16px"/></figure>
+>>>>>>> origin/master
     <!-- /wp:image -->
 
     <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
