@@ -25,3 +25,9 @@ add_action('admin_enqueue_scripts', function () {
 		wp_get_theme()->get('Version')
 	);
 });
+
+// TODO
+//  widget
+//  action
+//  filter
+

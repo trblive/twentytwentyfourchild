@@ -77,39 +77,39 @@
 					"name": "Base"
 				},
 				{
-					"color": "#FFE8E2",
-					"slug": "base-2",
-					"name": "Base / Two"
-				},
-				{
 					"color": "#000000",
 					"slug": "contrast",
 					"name": "Contrast"
 				},
 				{
-					"color": "#FC6C9D",
-					"slug": "contrast-2",
-					"name": "Contrast / Two"
-				},
-				{
-					"color": "#FE770F",
-					"slug": "contrast-3",
-					"name": "Contrast / Three"
-				},
-				{
-					"color": "#FF91AF",
+					"color": "#FFD1DC",
 					"slug": "accent",
 					"name": "Accent"
 				},
 				{
-					"color": "#FFBDAD",
+					"color": "#FE770F",
 					"slug": "accent-2",
 					"name": "Accent / Two"
 				},
 				{
-					"color": "#FFD1DC",
+					"color": "#FC6C9D",
 					"slug": "accent-3",
 					"name": "Accent / Three"
+				},
+				{
+					"color": "#FF91AF",
+					"slug": "accent-4",
+					"name": "Accent / Four"
+				},
+				{
+					"color": "#FFE8E2",
+					"slug": "accent-5",
+					"name": "Accent / Five"
+				},
+				{
+					"color": "#FFBDAD",
+					"slug": "accent-6",
+					"name": "Accent / Six"
 				}
 			]
 		},
@@ -162,6 +162,22 @@
 					"slug": "heading"
 				}
 			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "#FFFFFF",
+					"text": "#000000"
+				},
+				":hover": {
+					"color": {
+						"background": "#FFE8E2",
+						"text": "#000000"
+					}
+				}
+			}
 		}
 	}
 }

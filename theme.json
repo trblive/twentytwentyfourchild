@@ -208,6 +208,50 @@
 					"name": "Original Surfer",
 					"slug": "heading"
 				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "0.9rem",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "Medium",
+					"size": "1.05rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": false,
+					"name": "Med-Large",
+					"size": "1.4rem",
+					"slug": "med-large"
+				},
+				{
+					"fluid": false,
+					"name": "Large",
+					"size": "1.85rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"max": "2.5rem",
+						"min": "1.85rem"
+					},
+					"name": "Extra Large",
+					"size": "2.5rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"max": "3.27rem",
+						"min": "2.5rem"
+					},
+					"name": "Extra Extra Large",
+					"size": "3.27rem",
+					"slug": "xx-large"
+				}
 			]
 		}
 	},
@@ -245,34 +289,6 @@
 						"left": "var(--wp--preset--spacing--20)",
 						"right": "var(--wp--preset--spacing--20)"
 					}
-				}
-			},
-			"core/image": {
-				"border": {
-					"bottom": {
-						"color": "#2B2926",
-						"style": "solid",
-						"width": "2px"
-					},
-					"color": null,
-					"left": {
-						"color": "#2B2926",
-						"style": "solid",
-						"width": "2px"
-					},
-					"radius": "16px",
-					"right": {
-						"color": "#2B2926",
-						"style": "solid",
-						"width": "2px"
-					},
-					"style": null,
-					"top": {
-						"color": "#2B2926",
-						"style": "solid",
-						"width": "2px"
-					},
-					"width": null
 				}
 			}
 		},

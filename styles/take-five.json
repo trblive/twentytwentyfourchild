@@ -64,11 +64,6 @@
 					"name": "Contrast"
 				},
 				{
-					"color": "#F4A5A5",
-					"slug": "contrast-2",
-					"name": "Contrast / Two"
-				},
-				{
 					"color": "#D5F4E8",
 					"slug": "accent",
 					"name": "Accent"
@@ -84,9 +79,14 @@
 					"name": "Accent / Three"
 				},
 				{
-					"color": "#FFF5B2",
+					"color": "#F4A5A5",
 					"slug": "accent-4",
 					"name": "Accent / Four"
+				},
+				{
+					"color": "#FFF5B2",
+					"slug": "accent-5",
+					"name": "Accent / Five"
 				}
 			]
 		},
@@ -139,6 +139,22 @@
 					"slug": "heading"
 				}
 			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"background": "#F4F5F5",
+					"text": "#080801"
+				},
+				":hover": {
+					"color": {
+						"background": "#F4A5A5",
+						"text": "#080801"
+					}
+				}
+			}
 		}
 	}
 }
