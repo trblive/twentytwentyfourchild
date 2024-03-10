@@ -64,14 +64,6 @@
 					"name": "Contrast"
 				},
 				{
-<<<<<<< HEAD
-=======
-					"color": "#F4A5A5",
-					"slug": "contrast-2",
-					"name": "Contrast / Two"
-				},
-				{
->>>>>>> origin/master
 					"color": "#D5F4E8",
 					"slug": "accent",
 					"name": "Accent"
@@ -87,7 +79,6 @@
 					"name": "Accent / Three"
 				},
 				{
-<<<<<<< HEAD
 					"color": "#F4A5A5",
 					"slug": "accent-4",
 					"name": "Accent / Four"
@@ -96,11 +87,6 @@
 					"color": "#FFF5B2",
 					"slug": "accent-5",
 					"name": "Accent / Five"
-=======
-					"color": "#FFF5B2",
-					"slug": "accent-4",
-					"name": "Accent / Four"
->>>>>>> origin/master
 				}
 			]
 		},
@@ -154,7 +140,6 @@
 				}
 			]
 		}
-<<<<<<< HEAD
 	},
 	"styles": {
 		"elements": {
@@ -171,7 +156,5 @@
 				}
 			}
 		}
-=======
->>>>>>> origin/master
 	}
 }

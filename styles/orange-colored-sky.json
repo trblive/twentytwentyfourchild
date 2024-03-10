@@ -77,48 +77,28 @@
 					"name": "Base"
 				},
 				{
-<<<<<<< HEAD
-=======
 					"color": "#FFE8E2",
 					"slug": "base-2",
 					"name": "Base / Two"
 				},
 				{
->>>>>>> origin/master
 					"color": "#000000",
 					"slug": "contrast",
 					"name": "Contrast"
 				},
 				{
-<<<<<<< HEAD
 					"color": "#FFD1DC",
-=======
-					"color": "#FC6C9D",
-					"slug": "contrast-2",
-					"name": "Contrast / Two"
-				},
-				{
-					"color": "#FE770F",
-					"slug": "contrast-3",
-					"name": "Contrast / Three"
-				},
-				{
-					"color": "#FF91AF",
->>>>>>> origin/master
+
 					"slug": "accent",
 					"name": "Accent"
 				},
 				{
-<<<<<<< HEAD
 					"color": "#FE770F",
-=======
-					"color": "#FFBDAD",
->>>>>>> origin/master
 					"slug": "accent-2",
 					"name": "Accent / Two"
 				},
 				{
-<<<<<<< HEAD
+
 					"color": "#FC6C9D",
 					"slug": "accent-3",
 					"name": "Accent / Three"
@@ -137,11 +117,6 @@
 					"color": "#FFBDAD",
 					"slug": "accent-6",
 					"name": "Accent / Six"
-=======
-					"color": "#FFD1DC",
-					"slug": "accent-3",
-					"name": "Accent / Three"
->>>>>>> origin/master
 				}
 			]
 		},
@@ -195,7 +170,6 @@
 				}
 			]
 		}
-<<<<<<< HEAD
 	},
 	"styles": {
 		"elements": {
@@ -212,7 +186,5 @@
 				}
 			}
 		}
-=======
->>>>>>> origin/master
 	}
 }
