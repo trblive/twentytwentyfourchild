@@ -325,7 +325,7 @@
 				}
 			}
 		},
-		"css": ".overflow {\noverflow: hidden;\n}\n\n.about-3-cols-2-header {\nflex: 1 1 30%;\n}\n.about-3-cols-2 {\nflex: 1 1 70%;\n}\n\n.icon {\nwidth: 27px;\nheight: 27px;\ndisplay: flex !important;\njustify-content: center;\nalign-items: center;\nbackground: var(--wp--preset--color--base);\nborder: 2px solid var(--wp--preset--color--contrast);\nborder-radius: 20px;\ntext-align: center;\n}\n\n@media (max-width: 987px) {\n.about-three-columns-2 {\nflex-direction: column;\n}\n.about-3-cols-2 {\nborder: 0 !important;\n}\n}"
+		"css": ".overflow {\noverflow: hidden;\n}\n\n.about-3-cols-2-header {\nflex: 1 1 30%;\n}\n.about-3-cols-2 {\nflex: 1 1 70%;\n}\n\n.icon > * {\nwidth: 27px;\nheight: 27px;\ndisplay: flex !important;\njustify-content: center;\nalign-items: center;\nbackground: var(--wp--preset--color--base);\nborder-radius: 20px;\ntext-align: center;\n}\n\n@media (max-width: 987px) {\n.about-three-columns-2 {\nflex-direction: column;\n}\n.about-3-cols-2 {\nborder: 0 !important;\n}\n}"
 	}
 }
 
