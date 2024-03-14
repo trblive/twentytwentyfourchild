@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Call to action block
- * Slug: twentytwentyfour/cta block
+ * Slug: twentytwentyfour/cta-block
  * Categories: call-to-action
  * Viewport width: 1400
  */

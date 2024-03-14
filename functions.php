@@ -12,11 +12,8 @@ add_action( 'wp_enqueue_scripts', function () {
 } );
 
 add_action('enqueue_block_editor_assets', function() {
-	wp_enqueue_script('gutenberg-filters', get_template_directory_uri() . 'child/build/index.js');
+	wp_enqueue_script('gutenberg-filters', get_template_directory_uri() . 'child/build/index.js', ['wp-edit-post']);
 });
-
-
-
 
 add_action('admin_enqueue_scripts', function () {
 	wp_enqueue_style('editor-style',
@@ -26,8 +23,8 @@ add_action('admin_enqueue_scripts', function () {
 	);
 });
 
+require_once 'style-handler.php';
+
 // TODO
 //  widget
-//  action
 //  filter
-

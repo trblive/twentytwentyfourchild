@@ -1,53 +1,32 @@
 import "@wordpress/components/build-style/style.css";
 import "@wordpress/block-editor/build-style/style.css";
 
-const { PanelBody, PanelRow, TextControl } = wp.components;
-const { InspectorControls, PanelColorSettings } = wp.blockEditor;
+const { ColorPalette, PanelBody, PanelRow, TextControl } = wp.components;
+const { InspectorControls } = wp.blockEditor;
 const { Fragment } = wp.element;
 const { __ } = wp.i18n;
 
+// create stylesheets
+let styleSheet = document.createElement("style");
 
-const loadStaticCssOnHead = (staticCss) => {
-    if (staticCss.id && staticCss.href) {
-        let styleSelector = window.document;
-        let iframes = document.getElementsByName('editor-canvas');
-        if (iframes.length) {
-            styleSelector = iframes[0].contentDocument;
-        }
+const loadStylesOnIframeHead = (staticCss) => {
+    let styleSelector = window.document;
+    let iframes = document.getElementsByName('editor-canvas');
+    if (iframes.length) {
+        styleSelector = iframes[0].contentDocument;
+    }
+
+    if (staticCss.id) {
         if (styleSelector.getElementById(staticCss.id) === null) {
-            let link = document.createElement('link');
-            link.type = 'text/css';
-            link.rel = 'stylesheet';
-            link.id = staticCss.id;
+            styleSheet.id = staticCss.id;
             if (styleSelector.getElementsByTagName('head').length !== 0) {
-                styleSelector.getElementsByTagName('head')[0].appendChild(link);
-                link.href = staticCss.href;
+                styleSelector.getElementsByTagName('head')[0].appendChild(styleSheet);
             } else {
-                styleSelector.getElementsByTagName('body')[0].appendChild(link);
-                link.href = staticCss.href;
+                styleSelector.getElementsByTagName('body')[0].appendChild(styleSheet);
             }
-        } else {
-            styleSelector.getElementById(staticCss.id).href = staticCss.href;
         }
     }
 };
-
-function EditorReady($, iframes) {
-    let wpdocument = $(document);
-
-    if (typeof iframes !== "undefined" && iframes.length) {
-        wpdocument = $('iframe[name="editor-canvas"]').contents();
-    }
-
-    wpdocument.on(
-        "change",
-        ".block-editor-panel-color-gradient-settings__dropdown, .components-text-control__input",
-        function () {
-            console.log(this);
-        }
-    )
-}
-
 
 function addBoxShadow(settings, name) {
     if (typeof settings.attributes !== "undefined") {
@@ -58,23 +37,20 @@ function addBoxShadow(settings, name) {
             shadowColor: {
                 type: "string"
             },
-            customShadowColor: {
-                type: "string"
-            },
             xValue: {
-                type: "number",
+                type: "string",
                 default: 0
             },
             yValue: {
-                type: "number",
+                type: "string",
                 default: 0
             },
             blur: {
-                type: "number",
+                type: "string",
                 default: 0
             },
             spread: {
-                type: "number",
+                type: "string",
                 default: 0
             }
         });
@@ -87,24 +63,24 @@ wp.hooks.addFilter(
     addBoxShadow
 );
 
-// create stylesheet
-let styleSheet = document.createElement("style");
-styleSheet.setAttribute('id', 'custom-styles');
-document.head.appendChild(styleSheet);
 
 // add box shadow controls to block editor tools
 const boxShadowControls = wp.compose.compose(
 
-    wp.blockEditor.withColors({shadowColor: 'box-shadow'}),
+    wp.blockEditor.withColors({shadowColor: 'color'}),
 
     wp.compose.createHigherOrderComponent((BlockEdit) => {
 
         return (props) => {
+
+            loadStylesOnIframeHead({id: "child-editor-styles"});
+
             if (props.name !== "core/button") {
                 return(
                     <BlockEdit {...props} />
                 );
             }
+
             const { attributes, setAttributes, isSelected, shadowColor, setShadowColor } = props;
             const { xValue, yValue, blur, spread } = attributes;
 
@@ -112,7 +88,10 @@ const boxShadowControls = wp.compose.compose(
             let newStyles = {
                 ...props.style
             };
-            let blockName;
+
+            // create unique identifier if none exists
+            let blockName = props.name.split('core/')[1];
+            let uniqueClass;
 
             const newProps = {
                 ...props,
@@ -123,38 +102,58 @@ const boxShadowControls = wp.compose.compose(
                 style: newStyles
             };
 
-            if (props.isSelected === true) {
-                blockName = props.name.split('core/')[1];
+            if (!/([0-9]+([A-Za-z]+[0-9]+)+)[A-Za-z]+/.test(newProps.attributes.className)) {
+                uniqueClass = (Math.random() + 1).toString(25).substring(2);
+                newClassName =  blockName + "-" + uniqueClass;
+            }
 
-                if (shadowColor.color !== undefined) {
+            let classArray = newClassName.split(' ');
 
-                    // create unique identifier if none exists
-                    if (!/([0-9]+([A-Za-z]+[0-9]+)+)[A-Za-z]+/.test(newProps.attributes.className)) {
-                        let uniqueClass = (Math.random() + 1).toString(25).substring(2);
-                        newClassName += blockName + "-" + uniqueClass;
-                    }
+            let selectors = '';
 
-                    // create regex pattern for selected identifier
-                    // separate variables for readability
-                    let expression = '\.' + `${newClassName}` + ' > \\* \{ box-shadow: ([A-Za-z0-9]+( [A-Za-z0-9]+)+) #[A-Za-z0-9]+; \}';
+            classArray.forEach((myClass) => {
+                if (myClass !== undefined) {
+                    selectors += '.' + myClass;
+                }
+            })
+
+
+            if (shadowColor.color !== undefined) {
+
+                // create regex pattern for selected identifier
+                // separate variables for readability
+                let expression = `${selectors}` + ' > \\* \{ box-shadow: ([A-Za-z0-9]+( [A-Za-z0-9]+)+) #[A-Za-z0-9]+; \}';
+                let regex = new RegExp(expression, "g");
+
+                // store styles
+                let styles = `box-shadow: ${xValue}px ${yValue}px ${blur}px ${spread}px ${shadowColor.color}`;
+
+                // check if pattern already exists for selected identifier
+                if (regex.test(styleSheet.innerHTML) === true) {
+
+                    // replace with updated styles
+                    styleSheet.innerHTML = styleSheet.innerHTML.replace(regex, `${selectors} > * { ${styles}; }`);
+
+                } else {
+                    // append styles to stylesheet
+                    styleSheet.innerHTML += ` ${selectors} > * { ${styles}; }`;
+                }
+            } else {
+
+                // clear styles
+                if (/([0-9]+([A-Za-z]+[0-9]+)+)[A-Za-z]+/.test(newProps.attributes.className)) {
+
+                    let expression = `${selectors}` + ' > \\* \{ box-shadow: ([A-Za-z0-9]+( [A-Za-z0-9]+)+) #[A-Za-z0-9]+; \}';
                     let regex = new RegExp(expression, "g");
 
-                    // store styles
-                    let styles = `box-shadow: ${xValue}px ${yValue}px ${blur}px ${spread}px ${shadowColor.color}`;
+                    let styles = ' ';
 
-                    // check if pattern already exists for selected identifier
                     if (regex.test(styleSheet.innerHTML) === true) {
 
-                        console.log(styleSheet.innerHTML.match(regex));
-
-                        // replace with updated styles
-                        styleSheet.innerHTML = styleSheet.innerHTML.replace(regex, `.${newClassName} > * { ${styles}; }`);
-
-                    } else {
-                        // append styles to stylesheet
-                        styleSheet.innerHTML += ` .${newClassName} > * { ${styles}; }`;
+                        styleSheet.innerHTML = styleSheet.innerHTML.replace(regex, styles);
                     }
                 }
+
             }
 
             return (
@@ -162,19 +161,15 @@ const boxShadowControls = wp.compose.compose(
                     <BlockEdit {...newProps} />
                     {isSelected && (props.name === 'core/button') &&
                         <InspectorControls>
-                            <PanelColorSettings
-                                title = {__('Box shadow colour')}
-                                initialOpen = {true}
-                                enableAlpha = {true}
-                                colorSettings = {[
-                                    {
-                                        label: __('Shadow'),
-                                        value: shadowColor.color,
-                                        onChange: setShadowColor
-                                    }
-                                ]}
-                            />
-                            <PanelBody>
+
+                            <PanelBody title={__('Box shadow')}>
+                                <ColorPalette
+                                    colors = {wp.data.select( 'core/block-editor' ).getSettings().colors}
+                                    value = {shadowColor.color}
+                                    onChange ={setShadowColor}
+                                    enableAlpha ={false}
+                                    disableCustomColors
+                                />
                                 <PanelRow>
                                     <TextControl
                                         label = {__('X')}
@@ -194,6 +189,8 @@ const boxShadowControls = wp.compose.compose(
                                             })
                                     }}
                                     />
+                                </PanelRow>
+                                <PanelRow>
                                     <TextControl
                                         label = {__('blur')}
                                         value = {blur}
@@ -201,7 +198,7 @@ const boxShadowControls = wp.compose.compose(
                                             setAttributes({
                                                 blur: nextBlur,
                                             })
-                                    }}
+                                        }}
                                     />
                                     <TextControl
                                         label = {__('spread')}
@@ -210,9 +207,10 @@ const boxShadowControls = wp.compose.compose(
                                             setAttributes({
                                                 spread: nextSpread,
                                             })
-                                    }}
+                                        }}
                                     />
                                 </PanelRow>
+
                             </PanelBody>
                         </InspectorControls>
                     }
@@ -227,23 +225,26 @@ wp.hooks.addFilter(
     boxShadowControls
 );
 
-// generate classes
+
+// generate save CSS
 function applyBoxShadow(props, blockType, attributes) {
+
     if (blockType.name === "core/button") {
-        const {
-            shadowColor,
-            customShadowColor
-        } = attributes;
+
+        let { shadowColor } = attributes;
+
         let blockName = blockType.name.split('core/')[1];
         let className = props.className !== undefined ? props.className : "";
-        if (shadowColor !== undefined || customShadowColor !== undefined) {
-            className += " has-box-shadow ";
+
+        if (shadowColor !== undefined) {
+
             if (!/([0-9]+([A-Za-z]+[0-9]+)+)[A-Za-z]+/.test(props.className)) {
                 let uniqueClass = (Math.random() + 1).toString(25).substring(2);
                 className += " " + blockName + "-" + uniqueClass;
             }
         }
         props.className = className;
+
     }
     return props;
 }
@@ -253,27 +254,3 @@ wp.hooks.addFilter(
     applyBoxShadow
 );
 
-(function ($) {
-    function preEditor() {
-        if (window.location.href.indexOf('site-editor.php') > -1) {
-            let blockLoaded = false;
-            let blockLoadedInterval = setInterval(function () {
-                let iframes = $('iframe[name="editor-canvas"]');
-                if (iframes.length) {
-                    /*post-title-0 is ID of Post Title Textarea*/
-                    //Actual functions goes here
-                    EditorReady($, iframes);
-
-                    blockLoaded = true;
-                }
-                if (blockLoaded) {
-                    clearInterval(blockLoadedInterval);
-                }
-            }, 500);
-        } else {
-            EditorReady($);
-        }
-    }
-
-    preEditor();
-})(jQuery);
