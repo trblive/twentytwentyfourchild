@@ -23,8 +23,31 @@ add_action('admin_enqueue_scripts', function () {
 	);
 });
 
+// register widget area for use with classic themes
+add_action('widgets_init', function () {
+	register_sidebar(array(
+		'id' => 'primary',
+		'name' => __('Test widget'),
+		'description' => 'this is a test widget',
+		'before_widget' => '<div id="%1$s" class="child_theme_widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	));
+});
+
+// register custom Gutenberg template part area
+add_filter('default_wp_template_part_areas', function(array $areas) {
+	$areas[] = array(
+		'area'        => 'widget',
+		'area_tag'    => 'div',
+		'label'       => __( 'Widget area' ),
+		'description' => __( 'Template area for widgets.' ),
+		'icon'        => 'sidebar'
+	);
+
+	return $areas;
+});
+
 require_once 'style-handler.php';
 
-// TODO
-//  widget
-//  filter

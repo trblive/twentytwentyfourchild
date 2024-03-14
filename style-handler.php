@@ -112,11 +112,8 @@ if (!class_exists('StyleHandler')) {
 			$post_id = get_the_ID();
 			if (!$post_id) {
 				$post_id = get_option('page_on_front');
-
 			}
 
-			// blog homepage: $post_id = 184
-			// Home (alternative) page: $post_id = 177
 			if ($post_id) {
 
 				$post_type = get_post_type( $post_id );
