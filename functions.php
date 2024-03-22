@@ -38,15 +38,15 @@ add_action('widgets_init', function () {
 
 // register custom Gutenberg template part area
 add_filter('default_wp_template_part_areas', function(array $areas) {
-	$areas[] = array(
-		'area'        => 'widget',
-		'area_tag'    => 'div',
-		'label'       => __( 'Widget area' ),
-		'description' => __( 'Template area for widgets.' ),
-		'icon'        => 'sidebar'
-	);
+    $areas[] = array(
+        'area'        => 'widget',
+        'area_tag'    => 'div',
+        'label'       => __( 'Widget area', 'twentytwentyfourchild' ),
+        'description' => __( 'Template area for widgets.', 'twentytwentyfourchild' ),
+        'icon'        => 'sidebar'
+    );
 
-	return $areas;
+    return $areas;
 });
 
 require_once 'style-handler.php';

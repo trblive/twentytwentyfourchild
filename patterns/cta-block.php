@@ -16,9 +16,9 @@
 	<p class="has-text-align-center">Stay in the loop with everything you need to know.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-	<div class="wp-block-buttons"><!-- wp:button {"className":"button-l3mldn2mfl4e","shadowColor":"base-2"} -->
-		<div class="wp-block-button button-l3mldn2mfl4e has-box-shadow "><a class="wp-block-button__link wp-element-button">Sign up</a></div>
-		<!-- /wp:button --></div>
-	<!-- /wp:buttons --></div>
+    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base-2","textColor":"contrast","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"className":"button-l3mldn2mfl4e has-box-shadow","shadowColor":"contrast","xValue":"5","yValue":"5"} -->
+        <div class="wp-block-button button-l3mldn2mfl4e has-box-shadow"><a class="wp-block-button__link has-contrast-color has-base-2-background-color has-text-color has-background has-link-color wp-element-button">Sign up</a></div>
+        <!-- /wp:button --></div>
+    <!-- /wp:buttons --></div>
 <!-- /wp:group -->

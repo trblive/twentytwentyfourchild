@@ -330,8 +330,38 @@
 	"templateParts": [
 		{
 			"area": "widget",
-			"name": "widget-area",
-			"title": "Widget area"
+			"name": "widget",
+			"title": "Recent Posts Widget"
+		},
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "header",
+			"name": "header-2",
+			"title": "Header 2"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		},
+		{
+			"area": "footer",
+			"name": "footer-2",
+			"title": "Footer 2"
+		},
+		{
+			"area": "uncategorized",
+			"name": "sidebar",
+			"title": "Sidebar"
+		},
+		{
+			"area": "uncategorized",
+			"name": "post-meta",
+			"title": "Post Meta"
 		}
 	]
 }

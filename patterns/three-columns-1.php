@@ -25,7 +25,7 @@
             <!-- /wp:group -->
 
             <!-- wp:image {"id":35,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"color":"var:preset|color|contrast","width":"2px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|contrast","width":"2px"}}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress3/wp-content/uploads/2024/03/icecream1-878x1024.png" alt="" class="wp-image-35" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--contrast);border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--contrast);border-left-width:2px"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream1.png" alt="" class="wp-image-35" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--contrast);border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--contrast);border-left-width:2px"/></figure>
             <!-- /wp:image -->
 
             <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"16px","bottomRight":"16px"},"width":"2px"}},"borderColor":"contrast","backgroundColor":"accent-2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -47,7 +47,7 @@
             <!-- /wp:group -->
 
             <!-- wp:image {"id":36,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"width":"2px"},"bottom":{"width":"0px","style":"none"},"left":{"width":"2px"}}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress3/wp-content/uploads/2024/03/icecream2-878x1024.png" alt="" class="wp-image-36" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream2.png" alt="" class="wp-image-36" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"/></figure>
             <!-- /wp:image -->
 
             <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"16px","bottomRight":"16px"},"width":"2px"}},"borderColor":"contrast","backgroundColor":"accent-5","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -69,7 +69,7 @@
             <!-- /wp:group -->
 
             <!-- wp:image {"id":37,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"width":"2px"},"bottom":{"width":"0px","style":"none"},"left":{"width":"2px"}}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress3/wp-content/uploads/2024/03/icecream3-878x1024.png" alt="" class="wp-image-37" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream3.png" alt="" class="wp-image-37" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"/></figure>
             <!-- /wp:image -->
 
             <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"16px","bottomRight":"16px"},"width":"2px"}},"borderColor":"contrast","backgroundColor":"accent-3","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
