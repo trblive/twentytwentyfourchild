@@ -13,7 +13,7 @@
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|50","margin":{"top":"0","bottom":"0"}},"border":{"bottom":{"color":"var:preset|color|contrast","width":"2px"},"top":[],"right":[],"left":[]}},"backgroundColor":"accent","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignfull has-accent-background-color has-background" style="border-bottom-color:var(--wp--preset--color--contrast);border-bottom-width:2px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"id":28,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px","width":"2px"}},"borderColor":"contrast"} -->
-    <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/banner.png" alt="" class="has-border-color has-contrast-border-color wp-image-28" style="border-width:2px;border-radius:16px"/></figure>
+    <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/banner.png" alt="Ice cream, flowers and fruit on a pink background." class="has-border-color has-contrast-border-color wp-image-28" style="border-width:2px;border-radius:16px"></figure>
     <!-- /wp:image -->
 
     <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
@@ -65,7 +65,7 @@
             <!-- /wp:group -->
 
             <!-- wp:image {"id":35,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"color":"var:preset|color|contrast","width":"2px"},"bottom":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|contrast","width":"2px"}}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/icecream1.png" alt="" class="wp-image-35" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--contrast);border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--contrast);border-left-width:2px"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/icecream1.png" alt="Purple ice cream with sprinkles." class="wp-image-35" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-color:var(--wp--preset--color--contrast);border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-color:var(--wp--preset--color--contrast);border-left-width:2px"></figure>
             <!-- /wp:image -->
 
             <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"16px","bottomRight":"16px"},"width":"2px"}},"borderColor":"contrast","backgroundColor":"accent-2","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -87,7 +87,7 @@
             <!-- /wp:group -->
 
             <!-- wp:image {"id":36,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"width":"2px"},"bottom":{"width":"0px","style":"none"},"left":{"width":"2px"}}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/icecream2.png" alt="" class="wp-image-36" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/icecream2.png" alt="Pink and white ice cream." class="wp-image-36" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"></figure>
             <!-- /wp:image -->
 
             <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"16px","bottomRight":"16px"},"width":"2px"}},"borderColor":"contrast","backgroundColor":"accent-5","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -109,7 +109,7 @@
             <!-- /wp:group -->
 
             <!-- wp:image {"id":37,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","top":{"width":"0px","style":"none"},"right":{"width":"2px"},"bottom":{"width":"0px","style":"none"},"left":{"width":"2px"}}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/icecream3.png" alt="" class="wp-image-37" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/icecream3.png" alt="Yellow ice cream with sprinkles." class="wp-image-37" style="border-radius:0px;border-top-style:none;border-top-width:0px;border-right-width:2px;border-bottom-style:none;border-bottom-width:0px;border-left-width:2px"></figure>
             <!-- /wp:image -->
 
             <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"16px","bottomRight":"16px"},"width":"2px"}},"borderColor":"contrast","backgroundColor":"accent-3","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->

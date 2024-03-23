@@ -31,7 +31,7 @@
     <!-- wp:group {"style":{"border":{"width":"2px","radius":{"topLeft":"200px","topRight":"200px","bottomLeft":"16px","bottomRight":"16px"}},"layout":{"selfStretch":"fixed","flexSize":"400px"},"spacing":{"blockGap":"0"}},"backgroundColor":"accent","className":"overflow","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","flexWrap":"nowrap"}} -->
     <div class="wp-block-group overflow has-accent-background-color has-background" style="border-width:2px;border-top-left-radius:200px;border-top-right-radius:200px;border-bottom-left-radius:16px;border-bottom-right-radius:16px"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":""},"spacing":{"padding":{"right":"var:preset|spacing|10","left":"var:preset|spacing|10","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"layout":{"type":"default"}} -->
         <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:image {"id":53,"aspectRatio":"0.6666666666666666","scale":"contain","sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","width":"0px","style":"none"}}} -->
-            <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/banner2.png" alt="" class="wp-image-53" style="border-style:none;border-width:0px;border-radius:0px;aspect-ratio:0.6666666666666666;object-fit:contain"/></figure>
+            <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/banner2.png" alt="Two pink, white and purple stick ice creams, below curved text reading 'New Flavour' in capital letters." class="wp-image-53" style="border-style:none;border-width:0px;border-radius:0px;aspect-ratio:0.6666666666666666;object-fit:contain"></figure>
             <!-- /wp:image --></div>
         <!-- /wp:group -->
 
@@ -68,7 +68,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:image {"id":35,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","width":"0px","style":"none"}}} -->
-                <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream1.png" alt="" class="wp-image-35" style="border-style:none;border-width:0px;border-radius:0px"/></figure>
+                <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream1.png" alt="Purple ice cream with sprinkles." class="wp-image-35" style="border-style:none;border-width:0px;border-radius:0px"></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -90,7 +90,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:image {"id":37,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","width":"0px","style":"none"}}} -->
-                <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream3.png" alt="" class="wp-image-37" style="border-style:none;border-width:0px;border-radius:0px"/></figure>
+                <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream3.png" alt="Yellow ice cream with sprinkles." class="wp-image-37" style="border-style:none;border-width:0px;border-radius:0px"></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -112,7 +112,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:image {"id":36,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"0px","width":"0px","style":"none"}}} -->
-                <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream2.png" alt="" class="wp-image-36" style="border-style:none;border-width:0px;border-radius:0px"/></figure>
+                <figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>child/assets/images/icecream2.png" alt="Pink and white ice cream." class="wp-image-36" style="border-style:none;border-width:0px;border-radius:0px"></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

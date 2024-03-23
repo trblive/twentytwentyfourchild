@@ -11,7 +11,7 @@
 <div class="wp-block-group alignwide has-base-background-color has-background" style="border-bottom-color:var(--wp--preset--color--contrast);border-bottom-width:2px;padding-top:20px;padding-bottom:20px"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap","orientation":"horizontal"}} -->
 	<div class="wp-block-group alignwide">
         <!-- wp:image {"id":18,"width":"120px","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"0px","width":"0px","style":"none"}}} -->
-        <figure class="wp-block-image size-full is-resized has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/Logo.png" alt="" class="wp-image-18" style="border-style:none;border-width:0px;border-radius:0px;width:120px"/></figure>
+        <figure class="wp-block-image size-full is-resized has-custom-border"><img src="http://localhost/wordpress/wp-content/themes/twentytwentyfourchild/assets/images/Logo.png" alt="Side logo" class="wp-image-18" style="border-style:none;border-width:0px;border-radius:0px;width:120px"/></figure>
         <!-- /wp:image -->
 
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"nowrap"}} -->
