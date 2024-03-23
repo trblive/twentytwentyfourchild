@@ -35,15 +35,23 @@ GNU General Public License for more details.
 === Images ===
 License: CC0 https://creativecommons.org/publicdomain/zero/1.0/
 
-museum.webp - https://www.rawpixel.com/image/3297419/free-photo-image-interior-hallway-architecture
-tourist-and-building.webp - https://www.rawpixel.com/image/5928004/photo-image-public-domain-hand-person
-building-exterior.webp - https://www.rawpixel.com/image/430335/free-photo-image-architecture-building-roof
-windows.webp - https://www.rawpixel.com/image/3286615/free-photo-image-texture-architecture-building
-abstract-geometric-art.webp - https://www.rawpixel.com/image/3283970/free-photo-image-pattern-artwork-abstract
-angular-roof.webp - https://www.rawpixel.com/image/3289063/free-photo-image-architectural-detail-architecture
-art-gallery.webp - https://www.rawpixel.com/image/3286187/free-photo-image-person-stairs-architecture
-green-staircase.webp - https://www.rawpixel.com/image/430558/free-photo-image-abstract-architecture-art-public-domain
-hotel-facade.webp - https://www.rawpixel.com/image/3286725/free-photo-image-black-and-white-background-photos
+banner.png – https://www.freepik.com/free-photo/assorted-flavored-ice-cream-table_8088129.htm
+banner2.png – https://www.freepik.com/free-photo/assorted-flavored-ice-cream_8088140.htm
+delicious-arrangement-summer-ice-cream-slices-strawberries.jpg – https://www.freepik.com/free-photo/delicious-arrangement-summer-ice-cream-slices-strawberries_6753273.htm
+fruit-ice-cream-flavor-collection_23-2148539402.jpg – https://www.freepik.com/free-photo/fruit-ice-cream-flavor-collection_8087398.htm
+fruit-ice-cream-flavor-plate-table.jpg – https://www.freepik.com/free-photo/fruit-ice-cream-flavor-plate-table_8087402.htm
+homemade-popsicle-ice-cream-cones.jpg – https://www.freepik.com/free-photo/homemade-popsicle-ice-cream-cones_6755349.htm
+homemade-popsicle-ice-cream-with-pink-background.jpg – https://www.freepik.com/free-photo/homemade-popsicle-ice-cream-with-pink-background_6755297.htm
+ice-cream-sticks-plate.jpg – https://www.freepik.com/free-photo/ice-cream-sticks-plate_8087389.htm
+ice-cream-sticks-strawberries-surroundings_23-2148430720.jpeg – https://www.freepik.com/free-photo/ice-cream-sticks-strawberries-surroundings_6753364.htm
+icecream1.png – https://www.freepik.com/free-photo/ice-cream-stick-with-candies_8088149.htm
+icecream2.png – https://www.freepik.com/free-photo/ice-cream-stick_8088187.htm
+icecream3.png – https://www.freepik.com/free-photo/top-view-ice-cream-stick_8088171.htm
+pink-ice-cream-sticks-slices-strawberries.jpg – https://www.freepik.com/free-photo/pink-ice-cream-sticks-slices-strawberries_6753113.htm
+plate-with-ice-cream-stick.jpg – https://www.freepik.com/free-photo/plate-with-ice-cream-stick_8087403.htm
+top-view-cup-with-ice-cream.jpg – https://www.freepik.com/free-photo/top-view-cup-with-ice-cream_8087429.htm
+top-view-various-ice-cream-sticks.jpg – https://www.freepik.com/free-photo/top-view-various-ice-cream-sticks_6753047.htm
+
 
 License: UNICODE LICENSE V3 https://www.unicode.org/license.txt
 icon-message.webp

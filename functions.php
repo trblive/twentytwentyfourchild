@@ -13,14 +13,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
 add_action('enqueue_block_editor_assets', function() {
 	wp_enqueue_script('gutenberg-filters', get_template_directory_uri() . 'child/build/index.js', ['wp-edit-post']);
-});
-
-add_action('admin_enqueue_scripts', function () {
-	wp_enqueue_style('editor-style',
-		get_stylesheet_directory_uri() . '/style.css',
-		array( 'parent-style' ),
-		wp_get_theme()->get('Version')
-	);
+    wp_enqueue_style('editor styles', get_template_directory_uri() . 'child/style.css');
 });
 
 // register widget area for use with classic themes

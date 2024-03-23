@@ -109,7 +109,9 @@ if (!class_exists('StyleHandler')) {
 		}
 
 		public function generate_post_content(): void {
+
 			$post_id = get_the_ID();
+
 			if (!$post_id) {
 				$post_id = get_option('page_on_front');
 			}
